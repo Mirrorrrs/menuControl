@@ -17,6 +17,11 @@ class Meal extends Model
         return $this->belongsTo(Day::class, "id", "day_id");
     }
 
+    public function menu()
+    {
+        return $this->belongsTo(Menu::class, "id", "menu_id");
+    }
+
 
     public static function getMealName($type)
     {

@@ -16,9 +16,9 @@ class CreateMealsTable extends Migration
         Schema::create('meals', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("day_id");
+            $table->unsignedBigInteger("menu_id");
             $table->integer("meal_type");
             $table->string("meals");
-            $table->integer("week");
         });
     }
 
