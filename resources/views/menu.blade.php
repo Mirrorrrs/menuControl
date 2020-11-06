@@ -3,7 +3,7 @@
 @section("content")
     <div class="container-fluid w-75 m-auto">
         @foreach($days as $day)
-        <h2 class="mt-3">{{$day->day_name}}</h2>
+        <h2 class="mt-3">{{\Illuminate\Support\Facades\Lang::get("messages.".$day->day_name,[],"ru")}}</h2>
         <form class=" day_form w-100" action="{{route("save-menu")}}" method="post">
             @csrf
             <input type="hidden" name="day_id" value="{{$day->id}}">
@@ -11,7 +11,7 @@
             <div class="continer-fluid form_{{$day->id}}">
                 @foreach($day->meals as $meal)
                     <div class="form_group">
-                        <select name="types[{{$meal->id}}]" class="mt-3" required>
+                        <select name="types[{{$meal->id}}]" class="mt-3 select_type" required>
                             <option value="1" @if($meal->meal_type==1) selected @endif>Завтрак</option>
                             <option value="2"  @if($meal->meal_type==2) selected @endif >Второй завтрак</option>
                             <option value="3"  @if($meal->meal_type==3) selected @endif>Обед</option>
@@ -55,5 +55,6 @@ Array.from(meal_btns).forEach(el=>{
         EventTarget.appendChild(proto)
     }
 })
+
 </script>
 @endsection

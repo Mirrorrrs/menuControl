@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Day;
 use App\Models\Meal;
 use App\Models\Menu;
 use Illuminate\Http\Request;
@@ -35,14 +36,12 @@ class MenuController extends Controller
 
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
+   public function index(){
+        $id = \Illuminate\Support\Facades\Auth::user()->id;
+        $menus = \App\Models\Menu::where("user_id",$id)->get();
+        return view("menus",[
+            "menus"=>$menus
+        ]);
     }
 
     /**
@@ -55,12 +54,7 @@ class MenuController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
        Menu::create([
@@ -71,18 +65,26 @@ class MenuController extends Controller
        return redirect()->back();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Menu  $menu
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Menu $menu)
-    {
-        //
-    }
 
-    /**
+   public function show ($menu_id)
+   {
+       if (\App\Models\Menu::where("id", $menu_id)->exists()) {
+           $menu = collect(Day::with(["meals" => function ($query) use ($menu_id) {
+               $query->where("menu_id", $menu_id);
+           }])->get());
+           $days = collect(Day::all());
+           $menu = $menu->union($days);
+           return view('menu', [
+               "days" => $menu,
+               "menu_id" => $menu_id
+           ]);
+       }
+
+       return redirect()->back();
+   }
+
+
+        /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Menu  $menu

@@ -22,53 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65aef5ae-bd95-4a19-a169-3679e37466b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/menus.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/templates/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/itl_menu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/itl_menu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="65aef5ae-bd95-4a19-a169-3679e37466b3" name="Default Changelist" comment="Add menu feature&#10;Fixed some bugs">
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Day.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Meal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Meal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_03_131719_create_meals_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_03_131719_create_meals_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,8 +200,29 @@
       <workItem from="1604422495957" duration="26000" />
       <workItem from="1604423056841" duration="1105000" />
       <workItem from="1604457030714" duration="2586000" />
-      <workItem from="1604459658857" duration="4779000" />
+      <workItem from="1604459658857" duration="7227000" />
+      <workItem from="1604564958002" duration="75000" />
+      <workItem from="1604566801068" duration="280000" />
+      <workItem from="1604569888311" duration="576000" />
+      <workItem from="1604575856824" duration="153000" />
+      <workItem from="1604639116909" duration="35000" />
+      <workItem from="1604643171785" duration="880000" />
     </task>
+    <task id="LOCAL-00001" summary="Add menu feature&#10;Fixed some bugs">
+      <created>1604464628633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604464628633</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add menu feature&#10;Fixed some bugs">
+      <created>1604464777798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604464777798</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,18 +240,30 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add menu feature&#10;Fixed some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add menu feature&#10;Fixed some bugs" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604457714414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604457714414" />
-    <state x="604" y="332" key="NewPhpFileDialog" timestamp="1604458267223">
+    <state x="604" y="332" key="NewPhpFileDialog" timestamp="1604466807001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="332" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604458267223" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604460134245">
+    <state x="604" y="332" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604466807001" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1604464786429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604460134245" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604464786429" />
+    <state x="587" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604464843218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="587" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604464843218" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604643788775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604643788775" />
   </component>
 </project>
