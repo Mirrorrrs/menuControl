@@ -17,8 +17,8 @@
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control " name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                @error('name')
+                                    <span class="invalid mt-3" style="color: #e3342f;" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
@@ -32,7 +32,7 @@
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    <span class="invalid mt-3" style="color: #e3342f;" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror

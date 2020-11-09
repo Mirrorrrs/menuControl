@@ -2434,15 +2434,13 @@ textarea.form-control.is-valid {
   box-shadow: 0 0 0 0.2rem rgba(56, 193, 114, 0.25);
 }
 
-
-.invalid {
-    display: block;
-    width: 100%;
-    margin-top: 0.25rem;
-    font-size: 80%;
-    color: #e3342f;
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #e3342f;
 }
-
 
 .invalid-tooltip {
   position: absolute;

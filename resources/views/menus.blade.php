@@ -1,14 +1,26 @@
-@extends("templates.main")
+@extends('layouts.app')
 
 @section("content")
-<div class="container-fluid">
+<div class="container">
 
     @if(collect($menus)->isNotEmpty())
       @foreach($menus as $menu)
-           <div class="container-fluid d-flex align-items-center justify-content-between bg-white p-3 mt-2" style="border:1px solid #495057 !important; border-radius: 5px">
-               <h5 class="m-0">{{$menu->menu_name}}</h5>
-               <a href="{{route("menu",$menu->id)}}">Редактировать -></a>
-           </div>
+          <div class="cards">
+              <div class="card mt-1" >
+                  <div class="card-body d-flex align-items-center justify-content-between">
+                      <h3 class="card-title m-0">
+                          {{$menu->menu_name}}
+                      </h3>
+                      <div class="links">
+                          <a href="{{route("menu",$menu->id)}}" class="card-link">Редактировать</a>
+                          <a href="{{route("delete-menu",$menu->id)}}" class="card-link text-danger">Удалить</a>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+
         @endforeach
     @else
        <h2 class="font-weight-bold text-center mt-2">Здесь пока пустовато, добавьте меню!</h2>
@@ -22,6 +34,12 @@
             </div>
         </form>
     </div>
+
+        @error('menu_name')
+        <span class="invalid mt-3" style="color: #e3342f;" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+        @enderror
 
 
 

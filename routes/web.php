@@ -19,6 +19,8 @@ Route::middleware("auth")->group(function (){
     Route::get('/menu/{menu_id}',[\App\Http\Controllers\MenuController::class,"show"])->name("menu");
     Route::post("/menu/save",[\App\Http\Controllers\MenuController::class,"save"])->name("save-menu");
     Route::post("/menu/create",[\App\Http\Controllers\MenuController::class,"store"])->name("create-menu");
+    Route::get("/menu/delete/{id}",[\App\Http\Controllers\MenuController::class,"destroy"])->name("delete-menu");
+
 });
 
 

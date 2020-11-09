@@ -7,6 +7,7 @@ use App\Models\Meal;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class MenuController extends Controller
 {
@@ -57,12 +58,19 @@ class MenuController extends Controller
 
     public function store(Request $request)
     {
-       Menu::create([
+        $val = Validator::make($request->all(),[
+            "menu_name" => "required|unique:menus,menu_name"
+        ]);
+
+        if($val->fails()){
+            return redirect()->back()->withErrors($val);
+        }
+        Menu::create([
            "user_id"=>Auth::user()->id,
            "menu_name"=>$request->menu_name
-       ]);
+        ]);
 
-       return redirect()->back();
+        return redirect()->back();
     }
 
 
@@ -107,14 +115,10 @@ class MenuController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Menu  $menu
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Menu $menu)
+
+    public function destroy($id)
     {
-        //
+        Menu::where("id",$id)->delete();
+        return redirect()->back();
     }
 }
