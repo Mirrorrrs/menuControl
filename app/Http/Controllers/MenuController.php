@@ -61,13 +61,14 @@ class MenuController extends Controller
         $val = Validator::make($request->all(),[
             "menu_name" => "required|unique:menus,menu_name"
         ]);
-
+        $menu_number = Menu::all()->count();
         if($val->fails()){
             return redirect()->back()->withErrors($val);
         }
         Menu::create([
            "user_id"=>Auth::user()->id,
-           "menu_name"=>$request->menu_name
+           "menu_name"=>$request->menu_name,
+            "menu_number"=>$menu_number,
         ]);
 
         return redirect()->back();

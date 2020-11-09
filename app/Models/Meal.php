@@ -14,12 +14,12 @@ class Meal extends Model
 
     public function day()
     {
-        return $this->belongsTo(Day::class, "id", "day_id");
+        return $this->belongsTo(Day::class, "day_id", "id");
     }
 
     public function menu()
     {
-        return $this->belongsTo(Menu::class, "id", "menu_id");
+        return $this->belongsTo(Menu::class, "menu_id", "id");
     }
 
 

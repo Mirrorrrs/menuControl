@@ -10,7 +10,11 @@ class ApiController extends Controller
 {
     public function getMenu(Request $request)
     {
-        $meal = collect(Day::where("day_name",$request->day_name)->with("meals")->first()->meals)->where("meal_type",$request->meal_type)->where("menu_id",$request->menu_id)->values()->first()->only("meals");
+        $meal = collect(Meal::whereHas("day",function ($query) use($request){
+            $query->where("day_name",$request->day_name);
+        })->whereHas("menu",function($query)use($request){
+            $query->where("menu_number",$request->menu_id);
+        })->where("meal_type",$request->meal_type)->first());
         return response()->json($meal);
     }
 }
