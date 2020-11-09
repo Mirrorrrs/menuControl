@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65aef5ae-bd95-4a19-a169-3679e37466b3" name="Default Changelist" comment="small changes in db structure" />
+    <list default="true" id="65aef5ae-bd95-4a19-a169-3679e37466b3" name="Default Changelist" comment="ready to prod">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +205,8 @@
       <workItem from="1604644310505" duration="370000" />
       <workItem from="1604644770316" duration="852000" />
       <workItem from="1604938841597" duration="4179000" />
-      <workItem from="1604945322577" duration="3248000" />
+      <workItem from="1604945322577" duration="3368000" />
+      <workItem from="1604949145726" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="Add menu feature&#10;Fixed some bugs">
       <created>1604464628633</created>
@@ -245,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604948184727</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ready to prod">
+      <created>1604948693558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604948693558</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +281,8 @@
     <MESSAGE value="removed /public" />
     <MESSAGE value="design issues" />
     <MESSAGE value="small changes in db structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes in db structure" />
+    <MESSAGE value="ready to prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready to prod" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604457714414">
@@ -288,17 +301,27 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="605" y="312" key="VCS.EditChangelistDialog/0.0.1536.824@0.0.1536.824" timestamp="1604662218906" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1604948189799">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1604948699319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604948189799" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604948699319" />
     <state x="587" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604464843218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="587" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604464843218" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604643788775">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604949368647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604643788775" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604949368647" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
