@@ -19,17 +19,23 @@ class MenuController extends Controller
         $meals->keys()->each(function ($key) use ($meals,$types,$request){
             if(Meal::where("id",$key)->exists()){
                 $meal = Meal::where("id",$key)->first();
-                $meal->meals = $meals[$key];
-                $meal->meal_type = $types[$key];
-                $meal->save();
-            }else{
-                Meal::create([
-                    "day_id"=>$request->day_id,
-                    "meal_type"=>$types[$key],
-                    "meals"=>$meals[$key],
-                    "menu_id"=>$request->menu_id
-                ]);
+                if(in_array($types[$key],[1,2,3,4,5,6])){
+                    $meal->meals = $meals[$key];
+                    $meal->meal_type = $types[$key];
+                    $meal->save();
+                }else{
+                    $meal->delete();
+                }
 
+            }else{
+                if(in_array($types[$key],[1,2,3,4,5,6])){
+                    Meal::create([
+                        "day_id"=>$request->day_id,
+                        "meal_type"=>$types[$key],
+                        "meals"=>$meals[$key],
+                        "menu_id"=>$request->menu_id
+                    ]);
+                }
             }
         });
 
